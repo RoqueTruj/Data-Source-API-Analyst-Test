@@ -68,16 +68,8 @@ Google Colab was chosen for its flexibility and ease of sharing.
 
 ---
 
-**Author:** [Your Name]  
-**Date:** [Submission Date]  
+**Author:** [Roque Alejandro Trujillo ]  
+**Date:** [12/072025]  
 
 
-
-
-#### 🔐 Autenticación
-
-- Se utiliza un **Personal Access Token (PAT)** generado en GitHub.
-- Se debe agregar al header de las peticiones:
-  ```http
-  Authorization: Bearer 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
 
