@@ -5,7 +5,7 @@
 import requests
 
 # Token de acceso personal (PAT)
-GITHUB_TOKEN = "ghp_1234abcde5678fghijklmnopqrstuvwx9y"
+GITHUB_TOKEN = "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"
 
 # Headers necesarios para autenticación
 HEADERS = {
