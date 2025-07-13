@@ -1,40 +1,78 @@
-# Data-Source-API-Analyst-Test
-Homework assignment for Data Source API Analyst role.
-# Data Source API Analyst - Technical Test
+# Data Source API Analyst Test
 
-## 📌 Objetivo
-Este proyecto es parte de la prueba técnica para la vacante de **Data Source API Analyst**. El objetivo es demostrar habilidades para:
-- Investigar y consumir APIs (GitHub API REST v3)
-- Extraer información usando Postman o Google Colab
-- Documentar el proceso y manejar errores
+This repository contains the solution for the technical assignment for the **Data Source API Analyst** position. The goal was to demonstrate API knowledge by using GitHub’s public REST API for authenticated requests, pagination handling, rate limit management, and data extraction.
 
 ---
 
-## ✅ Paso 1: Preparar y Probar una Lista de Reportes
+## 📌 Objective
 
-### 🔹 1. Necesidades del Cliente
+The purpose of this project is to demonstrate the ability to:
 
-El cliente necesita obtener información clave desde la API de GitHub:
-
-| Requerimiento                 | Descripción |
-|------------------------------|-------------|
-| Buscar repositorios públicos | Encontrar repositorios según palabra clave, lenguaje o popularidad. |
-| Obtener commits               | Ver el historial de cambios (commits) de un repositorio específico. |
-| Consultar contenidos          | Leer archivos como README.md, código fuente, etc., dentro de un repositorio. |
+- Understand and use REST APIs (GitHub API)
+- Make authenticated requests using tokens
+- Extract relevant information: repositories, commits, file contents
+- Troubleshoot common issues (e.g., errors, rate limits)
+- Document and organize work professionally
 
 ---
 
-### 🔹 2. Investigación de la API de GitHub
+## 🛠️ Technologies Used
 
-Se investigaron los endpoints y reglas para cubrir las necesidades del cliente.
+- [Google Colab](https://colab.research.google.com/) (Python + requests)
+- [GitHub REST API](https://docs.github.com/en/rest)
+- Postman (optional)
+- Git and GitHub
 
-#### 📚 Endpoints Identificados
+---
 
-| Acción                | Endpoint GitHub |
-|-----------------------|-----------------|
-| Buscar repositorios   | `GET https://api.github.com/search/repositories?q=python` |
-| Obtener commits       | `GET https://api.github.com/repos/{owner}/{repo}/commits` |
-| Obtener contenido     | `GET https://api.github.com/repos/{owner}/{repo}/contents/{path}` |
+
+---
+
+## 📓 Notebook Description
+
+The file `github_api_test.ipynb` includes:
+
+1. **Authentication** using a personal GitHub token
+2. **Data extraction**:
+   - Public repository search (by keyword)
+   - Commit listing per repository
+   - File content extraction (e.g., README.md)
+3. **Error handling** for status codes (401, 403, 404)
+4. **Rate limit verification** using the `/rate_limit` endpoint
+
+---
+
+## 🔍 Key Details
+
+- Modular Python functions were created for reuse and clarity.
+- GitHub’s required headers (`X-GitHub-Api-Version`) were used.
+- Token is stored securely using variables within the notebook.
+- Each API call prints sample responses for validation.
+
+---
+
+## 🔧 Troubleshooting Guide
+
+See the file [`Content/troubleshooting.md`](Content/troubleshooting.md) for how common issues were addressed, such as:
+
+- ❌ `401 Unauthorized`
+- 🚫 `403 Rate Limit Exceeded`
+- 🛑 `404 Not Found`
+
+---
+
+## 🧠 Final Thoughts
+
+This was a very practical and interesting task that allowed me to demonstrate hands-on experience with REST APIs, data extraction, and clean documentation.  
+Google Colab was chosen for its flexibility and ease of sharing.
+
+---
+
+**Author:** [Your Name]  
+**Date:** [Submission Date]  
+
+
+
 
 #### 🔐 Autenticación
 
