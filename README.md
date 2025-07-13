@@ -41,5 +41,5 @@ Se investigaron los endpoints y reglas para cubrir las necesidades del cliente.
 - Se utiliza un **Personal Access Token (PAT)** generado en GitHub.
 - Se debe agregar al header de las peticiones:
   ```http
-  Authorization: Bearer TU_TOKEN
+  Authorization: Bearer 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
 
